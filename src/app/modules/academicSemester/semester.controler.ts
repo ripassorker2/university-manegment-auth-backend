@@ -1,25 +1,26 @@
 import { StatusCodes } from 'http-status-codes'
 import { NextFunction, Request, Response } from 'express'
-import { UserServices } from './user.sercices'
+import { AcademicSemesterServices } from './semester.services'
 import { catchAsync } from '../../../shared/catchAsync'
 import { sendResonse } from '../../../shared/sendResponse'
 
-const createUser = catchAsync(
+const createSemester = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     //
-    const user = req.body
-    const result = await UserServices.createUserDB(user)
+    const { ...semesterData } = req.body
+    //  const semesterData  = req.body
+    const result = await AcademicSemesterServices.createSemester(semesterData)
 
     sendResonse(res, {
       statusCode: StatusCodes.OK,
       success: true,
-      message: 'User Created successfully..!!',
+      message: 'Semester Created successfully..!!',
       data: result,
     })
     next()
   }
 )
 
-export const UserControler = {
-  createUser,
+export const AcademicSemesterControler = {
+  createSemester,
 }

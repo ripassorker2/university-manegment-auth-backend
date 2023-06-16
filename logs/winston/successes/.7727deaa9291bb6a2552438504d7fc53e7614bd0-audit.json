@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\.7727deaa9291bb6a2552438504d7fc53e7614bd0-audit.json",
+    "files": [
+        {
+            "date": 1686517415249,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\UM-2023-12-06-03-success.log",
+            "hash": "bea7689ced920ab11468c32d3740395a8f424a65775db7024fe804a526beffa8"
+        },
+        {
+            "date": 1686889466046,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\UM-2023-16-06-10-success.log",
+            "hash": "1e368cacbfa8b310e8cbd194f97697a47dd07fec6a0b1fba041062563277daa5"
+        },
+        {
+            "date": 1686892460336,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\UM-2023-16-06-11-success.log",
+            "hash": "90b5399a9307f6294439f179c2d31270e2f067f085f1a5800cb10b21793448d0"
+        },
+        {
+            "date": 1686908679537,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\UM-2023-16-06-15-success.log",
+            "hash": "db2b7acfbd14a9f928a1cbe9730b9e578edc54df88a410da1a553983d677e024"
+        },
+        {
+            "date": 1686909894085,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\UM-2023-16-06-16-success.log",
+            "hash": "ef93810ea1057d0d00c6994896e7d290da8057e9c28ba4093db8ef6216db38de"
+        },
+        {
+            "date": 1686913376945,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\UM-2023-16-06-17-success.log",
+            "hash": "c16e9d701ee4d0da25046df2688912bd58012a14042c9135ec88cace88b00f9a"
+        },
+        {
+            "date": 1686932722880,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\successes\\UM-2023-16-06-22-success.log",
+            "hash": "d5cf02ef7511d4842a5327a6d9761d23a2f48fe5d87ff99940f48e272e2d0b94"
+        }
+    ],
+    "hashType": "sha256"
+}
