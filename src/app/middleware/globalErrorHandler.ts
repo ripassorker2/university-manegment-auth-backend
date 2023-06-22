@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
+/* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler } from 'express';
 import config from '../../config';
 import { IGenericErrorMessageType } from '../../interface/IGenericErrorMessageType';
@@ -5,7 +8,8 @@ import { handleValidationError } from '../../errors/handleValidationError';
 import ApiError from '../../errors/ApiError';
 import { ZodError } from 'zod';
 import { handleZodError } from '../../errors/handleZodError';
-import { errorlogger } from '../../shared/logger';
+import { handleCastError } from '../../errors/handleCastError';
+// import { errorlogger } from '../../shared/logger';
 
 export const globalErrorHandler: ErrorRequestHandler = (
   error,
@@ -14,9 +18,9 @@ export const globalErrorHandler: ErrorRequestHandler = (
   // next
 ) => {
   //
-  config.env === 'development'
-    ? console.log('Global error handler -->', error)
-    : errorlogger.error('Global error handler ', error);
+  // config.env === 'development'
+  //   ? console.log('Global error handler -->', error)
+  //   : errorlogger.error('Global error handler ', error);
 
   let statusCode = 500;
   let message = 'Something went worng.';
@@ -48,7 +52,12 @@ export const globalErrorHandler: ErrorRequestHandler = (
         ]
       : [];
 
-    // Error
+    // Cast Error
+  } else if (error?.name === 'CastError') {
+    const simplifiedError = handleCastError(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessage = simplifiedError.errorMessages;
   } else if (error instanceof Error) {
     message = error?.message;
     errorMessage = error?.message

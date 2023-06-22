@@ -4,7 +4,7 @@ type IOptions = {
   page?: number;
   limit?: number;
   sortBy?: string;
-  orderBy?: SortOrder;
+  sortOrder?: SortOrder;
 };
 
 type IReturnOPtions = {
@@ -12,23 +12,24 @@ type IReturnOPtions = {
   limit: number;
   skip: number;
   sortBy: string;
-  orderBy: SortOrder;
+  sortOrder: SortOrder;
 };
 
 const paginationCalculate = (paginationOption: IOptions): IReturnOPtions => {
+  console.log(paginationOption);
   const page = Number(paginationOption.page) || 1;
   const limit = Number(paginationOption.limit) || 10;
   const skip = (page - 1) * limit;
 
   const sortBy = paginationOption.sortBy || 'createdAt';
-  const orderBy = paginationOption.orderBy || 'desc';
+  const sortOrder = paginationOption.sortOrder || 'desc';
 
   return {
     page,
     limit,
     skip,
     sortBy,
-    orderBy,
+    sortOrder,
   };
 };
 

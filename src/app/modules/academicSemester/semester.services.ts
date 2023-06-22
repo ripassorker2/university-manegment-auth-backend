@@ -37,13 +37,15 @@ const getAllSemester = async (
   filters: IAcademicSemesterFilter,
   paginationOptions: IPaginationOptions
 ): Promise<IGenericResposnse<IAcademicSemester[]>> => {
+  //
   //.............pagiantions..............
-  const { limit, page, skip, orderBy, sortBy } =
+  const { limit, page, skip, sortOrder, sortBy } =
     paginationHelper.paginationCalculate(paginationOptions);
+
   // ............sorting.................
   const sortCondition: { [key: string]: SortOrder } = {};
-  if (orderBy && sortBy) {
-    sortCondition[sortBy] = orderBy;
+  if (sortOrder && sortBy) {
+    sortCondition[sortBy] = sortOrder;
   }
 
   const { searchTerm, ...filtersData } = filters;
@@ -121,8 +123,37 @@ const getSingleSemester = async (
   return result;
 };
 
+const updateSemester = async (
+  id: string,
+  updateData: Partial<IAcademicSemester>
+): Promise<IAcademicSemester | null> => {
+  //
+  if (
+    updateData.title &&
+    updateData.code &&
+    academmicSemesterTitleCodeMapper[updateData.title] !== updateData.code
+  ) {
+    throw new ApiError(StatusCodes.BAD_REQUEST, 'Invalid semester code..!!!');
+  }
+  const result = await AcademicSemester.findOneAndUpdate(
+    { _id: id },
+    updateData,
+    { new: true }
+  );
+  return result;
+};
+
+const deleteSemester = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findByIdAndDelete({ _id: id });
+  return result;
+};
+
 export const AcademicSemesterServices = {
   createSemester,
   getAllSemester,
   getSingleSemester,
+  updateSemester,
+  deleteSemester,
 };

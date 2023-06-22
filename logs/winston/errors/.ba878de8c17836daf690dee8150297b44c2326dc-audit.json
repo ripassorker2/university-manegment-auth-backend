@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\errors\\.ba878de8c17836daf690dee8150297b44c2326dc-audit.json",
+    "files": [
+        {
+            "date": 1687408295943,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\errors\\UM-2023-22-06-10-error.log",
+            "hash": "6ec72e92858e70299047f610ee92833b49fca45f4b1639eebd7463e80df772b5"
+        },
+        {
+            "date": 1687410089672,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\errors\\UM-2023-22-06-11-error.log",
+            "hash": "d9ee7057f6bc55525528a1bd78c53f83cef690666b26b49ca993e317c79c0edf"
+        },
+        {
+            "date": 1687416905395,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\errors\\UM-2023-22-06-12-error.log",
+            "hash": "7f843f93c45e3a486d9ffeb8470b81b9803f56ffd4e9a8c5080e2dd02f951a3d"
+        },
+        {
+            "date": 1687417329723,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\errors\\UM-2023-22-06-13-error.log",
+            "hash": "95004ac31daf2727775b0c03a095d7f169b581f038f9b66735774a958a5f22b7"
+        },
+        {
+            "date": 1687420981730,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\errors\\UM-2023-22-06-14-error.log",
+            "hash": "e6421ee7d718ab749ceb571d18fe9ea5161416b73c3e664a67233b17342aa348"
+        },
+        {
+            "date": 1687424458801,
+            "name": "D:\\Web Devlopement\\Next Lavel Devlopment\\University manegment\\university-manegment-auth-backend\\logs\\winston\\errors\\UM-2023-22-06-15-error.log",
+            "hash": "b166332b751aff8382ecbfac33220d0846ba51f233b3c5718b8e83857324fc0b"
+        }
+    ],
+    "hashType": "sha256"
+}
