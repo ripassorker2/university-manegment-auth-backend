@@ -2,13 +2,13 @@ import mongoose from 'mongoose';
 import app from './app';
 import config from './config/index';
 import { errorlogger, logger } from './shared/logger';
-
 import { Server } from 'http';
 
 process.on('uncaughtException', error => {
   errorlogger.error(error);
   process.exit(1);
 });
+
 let server: Server;
 
 async function connection() {
@@ -20,6 +20,7 @@ async function connection() {
       console.log(`Application is listening on port ${config.port}`);
     });
   } catch (err) {
+    console.log('server errooooooooooorrrrr');
     errorlogger.error(err);
   }
 
@@ -36,9 +37,9 @@ async function connection() {
 }
 connection();
 
-process.on('SIGTERM', () => {
-  logger.info('SIGTERM is received');
-  if (server) {
-    server.close();
-  }
-});
+// process.on('SIGTERM', () => {
+//   logger.info('SIGTERM is received');
+//   if (server) {
+//     server.close();
+//   }
+// });

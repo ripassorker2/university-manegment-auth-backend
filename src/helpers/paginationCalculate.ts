@@ -16,7 +16,6 @@ type IReturnOPtions = {
 };
 
 const paginationCalculate = (paginationOption: IOptions): IReturnOPtions => {
-  console.log(paginationOption);
   const page = Number(paginationOption.page) || 1;
   const limit = Number(paginationOption.limit) || 10;
   const skip = (page - 1) * limit;

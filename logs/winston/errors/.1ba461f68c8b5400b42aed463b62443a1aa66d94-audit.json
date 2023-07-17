@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/rifat/RIFAT/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/errors/.1ba461f68c8b5400b42aed463b62443a1aa66d94-audit.json",
+    "files": [
+        {
+            "date": 1688113728577,
+            "name": "/home/rifat/RIFAT/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/errors/UM-2023-30-06-14-error.log",
+            "hash": "4f04025d49c4f5cb8c15d583e9a51ba2e42500eadbbff306f8e2daed793c12ff"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,3 +1,4 @@
+import { IAcademicSemester } from '../academicSemester/semester.interface';
 import { User } from './user.model';
 
 export const findLastUserId = async () => {
@@ -9,7 +10,7 @@ export const findLastUserId = async () => {
   return lastUser?.id;
 };
 
-export const generateUserId = async () => {
+export const generateUserId = async (academicSemester: IAcademicSemester) => {
   const currentId = (await findLastUserId()) || (0).toString().padStart(5, '0'); //00000
   //increment by 1
   const incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');

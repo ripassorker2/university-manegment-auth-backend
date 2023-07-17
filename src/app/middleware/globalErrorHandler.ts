@@ -14,8 +14,8 @@ import { handleCastError } from '../../errors/handleCastError';
 export const globalErrorHandler: ErrorRequestHandler = (
   error,
   req,
-  res
-  // next
+  res,
+  next
 ) => {
   //
   // config.env === 'development'
