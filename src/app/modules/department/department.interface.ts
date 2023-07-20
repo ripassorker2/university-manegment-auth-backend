@@ -1,17 +1,17 @@
 import { Model, Types } from 'mongoose';
-import { IAcademicFaculty } from '../faculty/faculty.interface';
+import { IAcademicFaculty } from '../acadenicFaculty/academicFaculty.interface';
 
 export type IAcademicDepartment = {
-  title: string;
-  academicFaculty: Types.ObjectId | IAcademicFaculty;
+   title: string;
+   academicFaculty: Types.ObjectId | IAcademicFaculty;
 };
 
 export type AcademicDepartmentModel = Model<
-  IAcademicDepartment,
-  Record<string, unknown>
+   IAcademicDepartment,
+   Record<string, unknown>
 >;
 
 export type IAcademicDepartmentFilters = {
-  searchTerm?: string;
-  academicFaculty?: Types.ObjectId;
+   searchTerm?: string;
+   academicFaculty?: Types.ObjectId;
 };
