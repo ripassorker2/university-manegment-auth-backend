@@ -18,6 +18,34 @@ const createStudent = catchAsync(async (req: Request, res: Response) => {
    });
 });
 
+const createFaculy = catchAsync(async (req: Request, res: Response) => {
+   const { faculty, ...userData } = req.body;
+   const result = await UserServices.createFaculty(faculty, userData);
+
+   sendResponse<IUser>(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: 'user created successfully!',
+      data: result,
+   });
+});
+
+// const createAdmin= catchAsync(
+//    async (req: Request, res: Response) => {
+//       const { admin, ...userData } = req.body;
+//       const result = await UserServices.createAdmin(admin, userData);
+
+//       sendResponse<IUser>(res, {
+//          statusCode: StatusCodes.OK,
+//          success: true,
+//          message: 'Admin created successfully!',
+//          data: result,
+//       });
+//    }
+// );
+
 export const UserControler = {
    createStudent,
+   createFaculy,
+   // createAdmin,
 };

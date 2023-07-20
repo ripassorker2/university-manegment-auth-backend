@@ -1,0 +1,5 @@
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Thu Jul 20 2023 22:39:31 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Thu Jul 20 2023 22:42:42 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Thu Jul 20 2023 22:44:34 }) 
+[LWC] error: querySrv ETIMEOUT _mongodb._tcp.cluster0.gvjclco.mongodb.net (Thu Jul 20 2023 22:49:7 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Thu Jul 20 2023 22:49:49 }) 

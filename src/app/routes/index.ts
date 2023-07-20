@@ -1,9 +1,10 @@
 import express from 'express';
 import { AcademicSemesterRoutes } from '../modules/academicSemester/semester.route';
 import { UserRoutes } from '../modules/user/user.route';
-import { AcademicFacultyRoutes } from '../modules/acadenicFaculty/academicFaculty.route';
+import { AcademicFacultyRoutes } from '../modules/academicFaculty/academicFaculty.route';
 import { AcademicDepartmentRoutes } from '../modules/department/department.route';
 import { StudentsRoutes } from '../modules/students/student.route';
+import { FacultyRoutes } from '../modules/faculty/faculty.route';
 
 const router = express.Router();
 
@@ -17,7 +18,7 @@ const routes = [
       route: AcademicSemesterRoutes,
    },
    {
-      path: '/faculty',
+      path: '/academicFaculty',
       route: AcademicFacultyRoutes,
    },
    {
@@ -27,6 +28,10 @@ const routes = [
    {
       path: '/student',
       route: StudentsRoutes,
+   },
+   {
+      path: '/faculty',
+      route: FacultyRoutes,
    },
 ];
 
