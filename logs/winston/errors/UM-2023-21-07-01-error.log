@@ -1,0 +1,7 @@
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Fri Jul 21 2023 1:23:13 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Fri Jul 21 2023 1:27:24 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_COMMITTED] to [TRANSACTION_ABORTED] (Fri Jul 21 2023 1:36:28 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Fri Jul 21 2023 1:40:54 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Fri Jul 21 2023 1:48:28 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED] (Fri Jul 21 2023 1:51:9 }) 
+[LWC] error: Attempted illegal state transition from [TRANSACTION_COMMITTED] to [TRANSACTION_ABORTED] (Fri Jul 21 2023 1:55:32 }) 

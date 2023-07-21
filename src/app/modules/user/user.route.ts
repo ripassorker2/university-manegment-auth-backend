@@ -17,10 +17,10 @@ router.post(
    UserControler.createFaculy
 );
 
-// router.post(
-//    '/create-admin',
-//    validateRequest(UserValidation.createAdminZodSchema),
-//    UserControler.createAdmin
-// );
+router.post(
+   '/create-admin',
+   validateRequest(UserValidation.createAdminZodSchema),
+   UserControler.createAdmin
+);
 
 export const UserRoutes = router;

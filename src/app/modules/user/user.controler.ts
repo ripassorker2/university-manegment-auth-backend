@@ -30,22 +30,20 @@ const createFaculy = catchAsync(async (req: Request, res: Response) => {
    });
 });
 
-// const createAdmin= catchAsync(
-//    async (req: Request, res: Response) => {
-//       const { admin, ...userData } = req.body;
-//       const result = await UserServices.createAdmin(admin, userData);
+const createAdmin = catchAsync(async (req: Request, res: Response) => {
+   const { admin, ...userData } = req.body;
+   const result = await UserServices.createAdmin(admin, userData);
 
-//       sendResponse<IUser>(res, {
-//          statusCode: StatusCodes.OK,
-//          success: true,
-//          message: 'Admin created successfully!',
-//          data: result,
-//       });
-//    }
-// );
+   sendResponse<IUser>(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: 'Admin created successfully!',
+      data: result,
+   });
+});
 
 export const UserControler = {
    createStudent,
    createFaculy,
-   // createAdmin,
+   createAdmin,
 };

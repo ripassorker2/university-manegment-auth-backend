@@ -134,6 +134,11 @@
             "date": 1689877238953,
             "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-21-07-00-success.log",
             "hash": "5c69348843c755d9bc25c71a6353cfa25152b198ebc74f890b143e0e2425d0ca"
+        },
+        {
+            "date": 1689879956016,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-21-07-01-success.log",
+            "hash": "5ba1e73ff3d68ff858e4ebc203680184f68671ddc6903576689ace95266e4d5b"
         }
     ],
     "hashType": "sha256"

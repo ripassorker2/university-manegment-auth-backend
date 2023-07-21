@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import mongoose, { SortOrder } from 'mongoose';
 import ApiError from '../../../errors/ApiError';
 import { User } from '../user/user.model';
@@ -112,23 +113,18 @@ const deleteFaculty = async (id: string): Promise<IFaculty | null> => {
    if (!isExist) {
       throw new ApiError(StatusCodes.NOT_FOUND, 'Faculty not found !');
    }
-   let userId = null;
+
    const session = await mongoose.startSession();
 
    try {
       session.startTransaction();
-      //delete faculty first
+      //delete admin first
       const faculty = await Faculty.findOneAndDelete({ _id: id }, { session });
-
-      if (faculty) {
-         userId = faculty.id;
-      }
-
       if (!faculty) {
-         throw new ApiError(404, 'Failed to delete Faculty');
+         throw new ApiError(404, 'Failed to delete faculty');
       }
       //delete user
-      await User.deleteOne({ id: userId });
+      await User.deleteOne({ faculty: id });
 
       session.commitTransaction();
       session.endSession();
