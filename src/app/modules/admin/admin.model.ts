@@ -75,5 +75,9 @@ const AdminSchema = new Schema<IAdmin, AdminModel>(
       timestamps: true,
    }
 );
+// AdminSchema.pre('save', async function (next) {
+//    console.log('Admin schema', this);
+//    next();
+// });
 
 export const Admin = model<IAdmin, AdminModel>('Admin', AdminSchema);

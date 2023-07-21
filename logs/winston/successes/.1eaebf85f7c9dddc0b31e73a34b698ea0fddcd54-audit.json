@@ -139,6 +139,41 @@
             "date": 1689879956016,
             "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-21-07-01-success.log",
             "hash": "5ba1e73ff3d68ff858e4ebc203680184f68671ddc6903576689ace95266e4d5b"
+        },
+        {
+            "date": 1689944418940,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-21-07-19-success.log",
+            "hash": "62562a13b15c4adfdf7917f20ad2fc1467b265e6692a244e37e347fe751d4de3"
+        },
+        {
+            "date": 1689948412585,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-21-07-20-success.log",
+            "hash": "bc1f5a8d83dfbbd1ad25e5560563748f2d392c84cd28fac0645c3e723ad48a6a"
+        },
+        {
+            "date": 1689952509364,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-21-07-21-success.log",
+            "hash": "a4f2501e22ef80dc491fe1766e9f077e02a39c6a3882e9a883be98ec6349501f"
+        },
+        {
+            "date": 1689959071869,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-21-07-23-success.log",
+            "hash": "a234924422480e7083f117681d69eadaf9272d9053725b4604c482d880013210"
+        },
+        {
+            "date": 1689963178199,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-22-07-00-success.log",
+            "hash": "5142272c206bdc5fb6cf0a1480f55bee7691b92eb63f186be982d9153524c22b"
+        },
+        {
+            "date": 1689966184077,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-22-07-01-success.log",
+            "hash": "226e49cc6f257d1445cddb2c6d1a5b69c65efab6de20c1637c9c2fc10033726a"
+        },
+        {
+            "date": 1689970418545,
+            "name": "/home/rifat/My Computer/Web Devlopement/Next Lavel Devlopment/University manegment/university-manegment-auth-backend/logs/winston/successes/UM-2023-22-07-02-success.log",
+            "hash": "49a41245f35ca2e87383ccb01ed006ffe9ceaa7934460c9bcb996d1594877154"
         }
     ],
     "hashType": "sha256"

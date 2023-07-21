@@ -3,11 +3,15 @@ import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import { globalErrorHandler } from './app/middleware/globalErrorHandler';
 import routes from './app/routes';
+import cookieParser from 'cookie-parser';
 
 const app: Application = express();
 
 // cors
 app.use(cors());
+
+// cockie perser
+app.use(cookieParser());
 
 // body perser
 app.use(express.json());
