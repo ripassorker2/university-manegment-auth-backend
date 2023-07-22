@@ -45,7 +45,6 @@ const updateFaculty = catchAsync(async (req: Request, res: Response) => {
    const id = req.params.id;
    const updatedData = req.body;
    const result = await FacultyService.updateFaculty(id, updatedData);
-   // console.log(result);
 
    sendResponse<IFaculty>(res, {
       statusCode: StatusCodes.OK,

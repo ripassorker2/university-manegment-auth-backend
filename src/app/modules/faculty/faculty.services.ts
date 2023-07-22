@@ -102,7 +102,7 @@ const updateFaculty = async (
    )
       .populate('academicDepartment')
       .populate('academicFaculty');
-   console.log(result);
+
    return result;
 };
 
